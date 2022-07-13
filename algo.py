@@ -31,6 +31,6 @@ def nb_list_tri():
 
 # Affichage
     print(LL)
-    print("Index : " + index)
+    print("Index : ", index)
 
 nb_list_tri()
