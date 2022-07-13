@@ -18,14 +18,18 @@ def nb_list_tri():
 # On génére le nombre aléatoire, on l'ajoute au tableau et on le trie
     random_nb = random.randint(min,max)
     print(random_nb)
-    LL.append(random_nb)
-    LL.sort()
+
+    def DPMR(LL,random_nb):
+        if LL[0] == random_nb :
+          return 0
+        else:
+         return 1 + DPMR(LL[1:], random_nb)
+
+    # LL.append(random_nb)
+    # LL.sort()
 
 # Affichage
     print(LL)
+    # print("Index : ", index)
 
 nb_list_tri()
-
-
-def DPMR() :
-    for 
